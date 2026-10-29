@@ -29,8 +29,8 @@ const revealObserver = new IntersectionObserver((entries, observer) => {
 }, options);
 
 
+".animate-on-scroll, .slide-left, .slide-right, .scale-up, .fade-in, .stagger-item"
 const animatedEls = document.querySelectorAll(
-    ".animate-on-scroll, .slide-left, .slide-right, .scale-up, .fade-in, .stagger-item"
 );
 animatedEls.forEach((el) => revealObserver.observe(el));
 
